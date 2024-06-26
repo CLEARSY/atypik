@@ -1,0 +1,12 @@
+Expression	Identifier	Line	Column	Type
+"FALSE"	9	26	17	BOOL
+"FLOAT"	7	17	15	(POW FLOAT)
+"REAL"	6	22	16	(POW REAL)
+"abs_cst"	3	14	5	FLOAT
+"3.0"	10	27	17	REAL
+"0"	8	25	16	INTEGER
+"INT"	4	20	15	(POW INTEGER)
+"abs_var3"	2	11	5	REAL
+"BOOL"	5	21	16	(POW BOOL)
+"abs_var2"	1	10	5	BOOL
+"abs_var"	0	9	5	INTEGER

@@ -1,0 +1,6 @@
+Expression	Identifier	Line	Column	Type
+"INT"	4	11	15	(POW INTEGER)
+"in2"	3	9	30	INTEGER
+"in1"	2	9	25	INTEGER
+"out2"	1	9	11	INTEGER
+"out1"	0	9	5	INTEGER

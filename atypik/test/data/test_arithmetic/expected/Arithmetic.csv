@@ -1,0 +1,100 @@
+Expression	Identifier	Line	Column	Type
+"rPI (xx).((xx : {1.1,1.2,1.3}) | xx)"	99	58	20	REAL
+"1.3"	97	58	38	REAL
+"xx"	94	58	18	REAL
+"rSIGMA (xx).((xx : {1.0,1.1}) | xx)"	93	57	22	REAL
+"1.0"	90	57	30	REAL
+"3"	87	56	39	INTEGER
+"NAT1"	86	56	26	(POW INTEGER)
+"iSIGMA (xx).((xx : {1,2,3}) | (xx) +i (1))"	84	55	22	INTEGER
+"{1,2,3}"	81	55	29	(POW INTEGER)
+"3"	80	55	36	INTEGER
+"1"	78	55	30	INTEGER
+"xx"	77	55	20	INTEGER
+"card({1,2})"	75	54	13	INTEGER
+"xx"	85	56	17	INTEGER
+"{1,2}"	74	54	18	(POW INTEGER)
+"{1.1,1.2,1.3}"	98	58	27	(POW REAL)
+"1.1"	95	58	28	REAL
+"1"	72	54	19	INTEGER
+"{1.0,2.0,3.0}"	70	53	18	(POW REAL)
+"2.0"	68	53	23	REAL
+"1.0"	67	53	19	REAL
+"rmax({1.0,2.0,3.0})"	66	52	14	REAL
+"1"	82	55	46	INTEGER
+"imin({1,2,3})"	61	51	14	INTEGER
+"{1,2,3}"	60	51	18	(POW INTEGER)
+"3"	59	51	23	INTEGER
+"pred(MININT)"	26	38	17	INTEGER
+"MININT"	25	38	18	INTEGER
+"rmin({1.0,2.0,3.0})"	71	53	14	REAL
+"div_r"	10	25	5	REAL
+"var4"	16	11	25	INTEGER
+"INTEGER"	21	15	11	(POW INTEGER)
+"var3"	15	11	19	BOOL
+"sub"	1	9	10	INTEGER
+"iPI (xx).((xx : NAT1) & (xx <=i 3) | xx)"	88	56	19	INTEGER
+"min_r"	14	11	12	REAL
+"mul_r2"	20	12	5	REAL
+"2"	79	55	33	INTEGER
+"1"	57	51	19	INTEGER
+"sub_r"	8	24	5	REAL
+"var2"	6	9	36	INTEGER
+"mul_i"	18	11	38	INTEGER
+"MAXINT"	27	39	18	INTEGER
+"1.1"	91	57	35	REAL
+"INT"	23	26	13	(POW INTEGER)
+"(floor(add_r)) -i (ceiling(sub_r))"	33	41	25	INTEGER
+"(var1) *i (var2)"	34	42	17	INTEGER
+"2"	73	54	22	INTEGER
+"2.0"	63	52	23	REAL
+"(real(var1)) *r (real(var1))"	45	47	25	REAL
+"floor(add_r)"	31	41	12	INTEGER
+"succ(MAXINT)"	28	39	17	INTEGER
+"mul"	2	9	15	INTEGER
+"3.0"	64	52	27	REAL
+"(3.14) -r (real(var1))"	42	46	19	REAL
+"div"	3	9	20	INTEGER
+"sum_r"	19	11	45	REAL
+"max_i"	11	10	33	INTEGER
+"pow"	4	9	25	INTEGER
+"min_i"	12	10	40	INTEGER
+"var1"	5	9	30	INTEGER
+"add_r"	7	22	5	REAL
+"xx"	89	57	20	REAL
+"BOOL"	24	30	12	(POW BOOL)
+"{1.0,2.0,3.0}"	65	52	18	(POW REAL)
+"mul_r"	9	23	5	REAL
+"imax({1,2,3})"	56	50	14	INTEGER
+"-i(var1)"	29	40	12	INTEGER
+"(-i(var1)) +i (var2)"	30	40	18	INTEGER
+"(var1) /i (var2)"	35	43	17	INTEGER
+"max_r"	13	11	5	REAL
+"(var1) **i (var2)"	36	44	17	INTEGER
+"real(var1)"	37	45	14	REAL
+"real(var2)"	38	45	27	REAL
+"(xx) +i (1)"	83	55	44	INTEGER
+"(real(var1)) +r (real(var2))"	39	45	25	REAL
+"1.2"	96	58	33	REAL
+"real(var1)"	41	46	21	REAL
+"1.0"	62	52	19	REAL
+"sum_i"	17	11	31	INTEGER
+"3.14"	40	46	14	REAL
+"REAL"	22	22	13	(POW REAL)
+"2"	58	51	21	INTEGER
+"real(var1)"	43	47	14	REAL
+"add"	0	9	5	INTEGER
+"real(var1)"	44	47	27	REAL
+"real(var1)"	46	48	14	REAL
+"real(var2)"	47	48	27	REAL
+"{1,2,3}"	55	50	18	(POW INTEGER)
+"{1.0,1.1}"	92	57	29	(POW REAL)
+"(real(var1)) /r (real(var2))"	48	48	25	REAL
+"FALSE"	49	49	33	BOOL
+"2"	53	50	21	INTEGER
+"TRUE"	50	49	41	BOOL
+"3.0"	69	53	27	REAL
+"bool((var1 = var2) or (FALSE = TRUE))"	51	49	13	BOOL
+"1"	52	50	19	INTEGER
+"ceiling(sub_r)"	32	41	27	INTEGER
+"3"	54	50	23	INTEGER

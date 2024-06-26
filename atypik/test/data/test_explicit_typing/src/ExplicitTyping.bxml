@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='ExplicitTyping' type='abstraction' position='true' semantic='true' b0check='false'>
+<Abstract_Constants>
+<Attr>
+<Pos l='13' c='1' s='18'/>
+</Attr>
+<Id value='abs_cst' typref='4'>
+<Attr>
+<Pos l='14' c='5' s='7'/>
+</Attr>
+</Id>
+</Abstract_Constants>
+<Abstract_Variables>
+<Attr>
+<Pos l='8' c='1' s='18'/>
+</Attr>
+<Id value='abs_var' typref='1'>
+<Attr>
+<Pos l='9' c='5' s='7'/>
+</Attr>
+</Id>
+<Id value='abs_var2' typref='0'>
+<Attr>
+<Pos l='10' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='abs_var3' typref='5'>
+<Attr>
+<Pos l='11' c='5' s='8'/>
+</Attr>
+</Id>
+</Abstract_Variables>
+<Properties>
+<Attr>
+<Pos l='16' c='1' s='10'/>
+</Attr>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='17' c='13' s='1'/>
+</Attr>
+<Id value='abs_cst' typref='4'>
+<Attr>
+<Pos l='17' c='5' s='7'/>
+</Attr>
+</Id>
+<Id value='FLOAT' typref='6'>
+<Attr>
+<Pos l='17' c='15' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Properties>
+<Invariant>
+<Attr>
+<Pos l='19' c='1' s='9'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='20' c='13' s='1'/>
+</Attr>
+<Id value='abs_var' typref='1'>
+<Attr>
+<Pos l='20' c='5' s='7'/>
+</Attr>
+</Id>
+<Id value='INT' typref='2'>
+<Attr>
+<Pos l='20' c='15' s='3'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='21' c='14' s='1'/>
+</Attr>
+<Id value='abs_var2' typref='0'>
+<Attr>
+<Pos l='21' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='BOOL' typref='7'>
+<Attr>
+<Pos l='21' c='16' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='14' s='1'/>
+</Attr>
+<Id value='abs_var3' typref='5'>
+<Attr>
+<Pos l='22' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='REAL' typref='8'>
+<Attr>
+<Pos l='22' c='16' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='24' c='1' s='14'/>
+</Attr>
+<Nary_Sub op='||'>
+<Assignement_Sub>
+<Attr>
+<Pos l='25' c='13' s='2'/>
+</Attr>
+<Variables>
+<Id value='abs_var' typref='1'>
+<Attr>
+<Pos l='25' c='5' s='7'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Integer_Literal value='0' typref='1'>
+<Attr>
+<Pos l='25' c='16' s='1'/>
+</Attr>
+</Integer_Literal>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='26' c='14' s='2'/>
+</Attr>
+<Variables>
+<Id value='abs_var2' typref='0'>
+<Attr>
+<Pos l='26' c='5' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Boolean_Literal value='FALSE' typref='0'>
+<Attr>
+<Pos l='26' c='17' s='5'/>
+</Attr>
+</Boolean_Literal>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='27' c='14' s='2'/>
+</Attr>
+<Variables>
+<Id value='abs_var3' typref='5'>
+<Attr>
+<Pos l='27' c='5' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Real_Literal value='3.0' typref='5'>
+<Attr>
+<Pos l='27' c='17' s='3'/>
+</Attr>
+</Real_Literal>
+</Values>
+</Assignement_Sub>
+</Nary_Sub>
+</Initialisation>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='4'>
+<Id value='FLOAT'/>
+</Type>
+<Type id='5'>
+<Id value='REAL'/>
+</Type>
+<Type id='6'>
+<Unary_Exp op='POW'>
+<Id value='FLOAT'/>
+</Unary_Exp>
+</Type>
+<Type id='7'>
+<Unary_Exp op='POW'>
+<Id value='BOOL'/>
+</Unary_Exp>
+</Type>
+<Type id='8'>
+<Unary_Exp op='POW'>
+<Id value='REAL'/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

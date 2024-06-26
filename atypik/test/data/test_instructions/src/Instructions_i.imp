@@ -1,0 +1,32 @@
+/* Instructions_i
+* Author: vdemeulenaere
+* Creation date: 13/06/2023
+*/
+
+IMPLEMENTATION Instructions_i
+REFINES Instructions_r
+
+IMPORTS
+    lib.Operations
+    
+VALUES 
+    ABS_SET = 1..10
+    
+CONCRETE_VARIABLES
+    var_i, var_i2, var_i3
+    
+INVARIANT
+    var_i : INT &
+    var_i2 : INT &
+    var_i3 : INT
+    
+INITIALISATION
+    VAR x1, x2 IN
+        x1 := 2;
+        x2 := x1 * 2;
+        var_i := x1 + x2
+    END;
+    var_i2, var_i3 <-- lib.pair(0, 1)
+    
+    
+END

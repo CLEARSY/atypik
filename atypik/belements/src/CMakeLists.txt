@@ -1,0 +1,43 @@
+include_directories(
+    ${atypik_SOURCE_DIR}/3rdparty/tinyxml2
+    ${atypik_SOURCE_DIR}/belements/include
+    ${atypik_SOURCE_DIR}/solver/include
+    ${atypik_SOURCE_DIR}/io/include
+    )
+
+add_library(BElements
+    any.cpp
+    assert.cpp
+    assignments.cpp
+    becomesin.cpp
+    becomessuchthat.cpp
+    bdefaulttypes.cpp
+    belemfactory.cpp
+    binaryexp.cpp
+    binarypred.cpp
+    block.cpp
+    booleanexp.cpp
+    case.cpp
+    comparison.cpp
+    conditional.cpp
+    expression.cpp
+    ident.cpp
+    let.cpp
+    loop.cpp
+    naryexp.cpp
+    narysub.cpp
+    operation.cpp
+    operationcall.cpp
+    predicate.cpp
+    quantifiedexp.cpp
+    quantifiedpred.cpp
+    quantifiedset.cpp
+    select.cpp
+    set.cpp
+    skip.cpp
+    unaryexp.cpp
+    valuation.cpp
+    varin.cpp
+    )
+
+target_link_libraries(BElements TINYXML2 IO Solver)

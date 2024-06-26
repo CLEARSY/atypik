@@ -1,0 +1,6 @@
+[submodule "atypik/3rdparty/sm"]
+	path = atypik/3rdparty/sm
+	url = https://github.com/stanford-centaur/smt-switch.git
+[submodule "atypik/3rdparty/smt-switch"]
+	path = atypik/3rdparty/smt-switch
+	url = https://github.com/stanford-centaur/smt-switch.git

@@ -1,0 +1,21 @@
+/* Sets_i
+ * Author: vdemeulenaere
+ * Creation date: 14/06/2023
+ */
+
+IMPLEMENTATION Sets_i
+REFINES Sets
+
+VALUES 
+    ABS_ENS = 1..100
+
+CONCRETE_VARIABLES 
+    var
+
+INVARIANT 
+    var : ABS_ENS
+
+INITIALISATION 
+    var := 1
+
+ END

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Operations'
+    type='abstraction' position='true' semantic='true' b0check='false'>
+    <Initialisation>
+        <Skip />
+    </Initialisation>
+    <Operations>
+        <Operation name='pair'>
+            <Attr>
+                <Pos l='9' c='5' s='4' endLine='17' />
+            </Attr>
+            <Output_Parameters>
+                <Id value='out1' typref='1'>
+                    <Attr>
+                        <Pos l='9' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Id value='out2' typref='1'>
+                    <Attr>
+                        <Pos l='9' c='11' s='4' />
+                    </Attr>
+                </Id>
+            </Output_Parameters>
+            <Input_Parameters>
+                <Id value='in1' typref='1'>
+                    <Attr>
+                        <Pos l='9' c='25' s='3' />
+                    </Attr>
+                </Id>
+                <Id value='in2' typref='1'>
+                    <Attr>
+                        <Pos l='9' c='30' s='3' />
+                    </Attr>
+                </Id>
+            </Input_Parameters>
+            <Precondition>
+                <Nary_Pred op='&amp;'>
+                    <Exp_Comparison op=':'>
+                        <Attr>
+                            <Pos l='11' c='13' s='1' />
+                        </Attr>
+                        <Id value='in1' typref='1'>
+                            <Attr>
+                                <Pos l='11' c='9' s='3' />
+                            </Attr>
+                        </Id>
+                        <Id value='INT' typref='2'>
+                            <Attr>
+                                <Pos l='11' c='15' s='3' />
+                            </Attr>
+                        </Id>
+                    </Exp_Comparison>
+                    <Exp_Comparison op=':'>
+                        <Attr>
+                            <Pos l='11' c='25' s='1' />
+                        </Attr>
+                        <Id value='in2' typref='1'>
+                            <Attr>
+                                <Pos l='11' c='21' s='3' />
+                            </Attr>
+                        </Id>
+                        <Id value='INT' typref='2'>
+                            <Attr>
+                                <Pos l='11' c='27' s='3' />
+                            </Attr>
+                        </Id>
+                    </Exp_Comparison>
+                </Nary_Pred>
+            </Precondition>
+            <Body>
+                <Bloc_Sub>
+                    <Attr>
+                        <Pos l='13' c='9' s='5' />
+                    </Attr>
+                    <Nary_Sub op='||'>
+                        <Assignement_Sub>
+                            <Attr>
+                                <Pos l='14' c='18' s='2' />
+                            </Attr>
+                            <Variables>
+                                <Id value='out1' typref='1'>
+                                    <Attr>
+                                        <Pos l='14' c='13' s='4' />
+                                    </Attr>
+                                </Id>
+                            </Variables>
+                            <Values>
+                                <Id value='in1' typref='1'>
+                                    <Attr>
+                                        <Pos l='14' c='21' s='3' />
+                                    </Attr>
+                                </Id>
+                            </Values>
+                        </Assignement_Sub>
+                        <Assignement_Sub>
+                            <Attr>
+                                <Pos l='15' c='18' s='2' />
+                            </Attr>
+                            <Variables>
+                                <Id value='out2' typref='1'>
+                                    <Attr>
+                                        <Pos l='15' c='13' s='4' />
+                                    </Attr>
+                                </Id>
+                            </Variables>
+                            <Values>
+                                <Id value='in2' typref='1'>
+                                    <Attr>
+                                        <Pos l='15' c='21' s='3' />
+                                    </Attr>
+                                </Id>
+                            </Values>
+                        </Assignement_Sub>
+                    </Nary_Sub>
+                </Bloc_Sub>
+            </Body>
+        </Operation>
+    </Operations>
+    <TypeInfos>
+        <Type id='0'>
+            <Id value='BOOL' />
+        </Type>
+        <Type id='1'>
+            <Id value='INTEGER' />
+        </Type>
+        <Type id='2'>
+            <Unary_Exp op='POW'>
+                <Id value='INTEGER' />
+            </Unary_Exp>
+        </Type>
+        <Type id='3'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Id value='INTEGER' />
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+    </TypeInfos>
+
+</Machine>

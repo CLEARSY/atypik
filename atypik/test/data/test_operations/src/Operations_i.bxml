@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Operations_i' type='implementation' position='true' semantic='true' b0check='false'>
+<Abstraction>Operations</Abstraction>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<Operations>
+<Operation name='pair'>
+<Attr>
+<Pos l='13' c='5' s='4' endLine='17'/>
+</Attr>
+<Output_Parameters>
+<Id value='out1' typref='1'>
+<Attr>
+<Pos l='13' c='5' s='4'/>
+</Attr>
+</Id>
+<Id value='out2' typref='1'>
+<Attr>
+<Pos l='13' c='11' s='4'/>
+</Attr>
+</Id>
+</Output_Parameters>
+<Input_Parameters>
+<Id value='in1' typref='1'>
+<Attr>
+<Pos l='13' c='25' s='3'/>
+</Attr>
+</Id>
+<Id value='in2' typref='1'>
+<Attr>
+<Pos l='13' c='30' s='3'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Body>
+<Nary_Sub op=';'>
+<Assignement_Sub>
+<Attr>
+<Pos l='15' c='14' s='2'/>
+</Attr>
+<Variables>
+<Id value='out1' typref='1'>
+<Attr>
+<Pos l='15' c='9' s='4'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='in1' typref='1'>
+<Attr>
+<Pos l='15' c='17' s='3'/>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='16' c='14' s='2'/>
+</Attr>
+<Variables>
+<Id value='out2' typref='1'>
+<Attr>
+<Pos l='16' c='9' s='4'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Id value='in2' typref='1'>
+<Attr>
+<Pos l='16' c='17' s='3'/>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Nary_Sub>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

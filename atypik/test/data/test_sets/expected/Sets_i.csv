@@ -1,0 +1,8 @@
+Expression	Identifier	Line	Column	Type
+"ABS_ENS = (1) .. (100)"	75	10	5	(POW INTEGER)
+"100"	73	10	18	INTEGER
+"(1) .. (100)"	74	10	16	(POW INTEGER)
+"ABS_ENS"	4	16	11	(POW INTEGER)
+"var"	76	13	5	INTEGER
+"1"	72	10	15	INTEGER
+"1"	77	19	12	INTEGER

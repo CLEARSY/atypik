@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Sets' type='abstraction'
+    position='true' semantic='true' b0check='false'>
+    <Sets>
+        <Attr>
+            <Pos l='8' c='1' s='4' />
+        </Attr>
+        <Set>
+            <Id value='ENS' typref='4'>
+                <Attr>
+                    <Pos l='9' c='5' s='3' />
+                </Attr>
+            </Id>
+            <Enumerated_Values>
+                <Id value='Elt1' typref='5'>
+                    <Attr>
+                        <Pos l='9' c='12' s='4' />
+                    </Attr>
+                </Id>
+                <Id value='Elt2' typref='5'>
+                    <Attr>
+                        <Pos l='9' c='18' s='4' />
+                    </Attr>
+                </Id>
+            </Enumerated_Values>
+        </Set>
+        <Set>
+            <Id value='ABS_ENS' typref='6'>
+                <Attr>
+                    <Pos l='10' c='5' s='7' />
+                </Attr>
+            </Id>
+        </Set>
+    </Sets>
+    <Abstract_Constants>
+        <Attr>
+            <Pos l='12' c='1' s='18' />
+        </Attr>
+        <Id value='cst' typref='7'>
+            <Attr>
+                <Pos l='13' c='5' s='3' />
+            </Attr>
+        </Id>
+        <Id value='cst2' typref='0'>
+            <Attr>
+                <Pos l='13' c='10' s='4' />
+            </Attr>
+        </Id>
+    </Abstract_Constants>
+    <Abstract_Variables>
+        <Attr>
+            <Pos l='15' c='1' s='18' />
+        </Attr>
+        <Id value='ens' typref='8'>
+            <Attr>
+                <Pos l='16' c='5' s='3' />
+            </Attr>
+        </Id>
+        <Id value='ens2' typref='2'>
+            <Attr>
+                <Pos l='16' c='10' s='4' />
+            </Attr>
+        </Id>
+        <Id value='ens3' typref='2'>
+            <Attr>
+                <Pos l='16' c='16' s='4' />
+            </Attr>
+        </Id>
+        <Id value='ens4' typref='2'>
+            <Attr>
+                <Pos l='16' c='22' s='4' />
+            </Attr>
+        </Id>
+        <Id value='ens5' typref='9'>
+            <Attr>
+                <Pos l='16' c='28' s='4' />
+            </Attr>
+        </Id>
+        <Id value='diff' typref='2'>
+            <Attr>
+                <Pos l='17' c='5' s='4' />
+            </Attr>
+        </Id>
+        <Id value='union_' typref='2'>
+            <Attr>
+                <Pos l='17' c='11' s='6' />
+            </Attr>
+        </Id>
+        <Id value='inter_' typref='2'>
+            <Attr>
+                <Pos l='17' c='19' s='6' />
+            </Attr>
+        </Id>
+        <Id value='union_2' typref='2'>
+            <Attr>
+                <Pos l='17' c='27' s='7' />
+            </Attr>
+        </Id>
+        <Id value='inter_2' typref='2'>
+            <Attr>
+                <Pos l='17' c='36' s='7' />
+            </Attr>
+        </Id>
+        <Id value='union_3' typref='10'>
+            <Attr>
+                <Pos l='18' c='5' s='7' />
+            </Attr>
+        </Id>
+        <Id value='inter_3' typref='10'>
+            <Attr>
+                <Pos l='18' c='14' s='7' />
+            </Attr>
+        </Id>
+    </Abstract_Variables>
+    <Properties>
+        <Attr>
+            <Pos l='20' c='1' s='10' />
+        </Attr>
+        <Nary_Pred op='&amp;'>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='21' c='9' s='1' />
+                </Attr>
+                <Id value='cst' typref='7'>
+                    <Attr>
+                        <Pos l='21' c='5' s='3' />
+                    </Attr>
+                </Id>
+                <Id value='ABS_ENS' typref='6'>
+                    <Attr>
+                        <Pos l='21' c='11' s='7' />
+                    </Attr>
+                </Id>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='22' c='10' s='1' />
+                </Attr>
+                <Id value='cst2' typref='0'>
+                    <Attr>
+                        <Pos l='22' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Id value='BOOL' typref='11'>
+                    <Attr>
+                        <Pos l='22' c='12' s='4' />
+                    </Attr>
+                </Id>
+            </Exp_Comparison>
+        </Nary_Pred>
+    </Properties>
+    <Invariant>
+        <Attr>
+            <Pos l='24' c='1' s='9' />
+        </Attr>
+        <Nary_Pred op='&amp;'>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='25' c='9' s='1' />
+                </Attr>
+                <Id value='ens' typref='8'>
+                    <Attr>
+                        <Pos l='25' c='5' s='3' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='12'>
+                    <Attr>
+                        <Pos l='25' c='11' s='3' />
+                    </Attr>
+                    <Binary_Exp op='*s' typref='8'>
+                        <Attr>
+                            <Pos l='25' c='20' s='1' />
+                        </Attr>
+                        <Id value='BOOL' typref='11'>
+                            <Attr>
+                                <Pos l='25' c='15' s='4' />
+                            </Attr>
+                        </Id>
+                        <Id value='INTEGER' typref='2'>
+                            <Attr>
+                                <Pos l='25' c='22' s='7' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='26' c='10' s='1' />
+                </Attr>
+                <Id value='ens2' typref='2'>
+                    <Attr>
+                        <Pos l='26' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW1' typref='3'>
+                    <Attr>
+                        <Pos l='26' c='12' s='4' />
+                    </Attr>
+                    <Id value='INTEGER' typref='2'>
+                        <Attr>
+                            <Pos l='26' c='17' s='7' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='27' c='10' s='1' />
+                </Attr>
+                <Id value='ens3' typref='2'>
+                    <Attr>
+                        <Pos l='27' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='FIN' typref='3'>
+                    <Attr>
+                        <Pos l='27' c='12' s='3' />
+                    </Attr>
+                    <Id value='ens2' typref='2'>
+                        <Attr>
+                            <Pos l='27' c='16' s='4' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='28' c='10' s='1' />
+                </Attr>
+                <Id value='ens4' typref='2'>
+                    <Attr>
+                        <Pos l='28' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='FIN1' typref='3'>
+                    <Attr>
+                        <Pos l='28' c='12' s='4' />
+                    </Attr>
+                    <Id value='ens3' typref='2'>
+                        <Attr>
+                            <Pos l='28' c='17' s='4' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='29' c='10' s='1' />
+                </Attr>
+                <Id value='ens5' typref='9'>
+                    <Attr>
+                        <Pos l='29' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='13'>
+                    <Attr>
+                        <Pos l='29' c='12' s='3' />
+                    </Attr>
+                    <Binary_Exp op='*s' typref='9'>
+                        <Attr>
+                            <Pos l='29' c='41' s='1' />
+                        </Attr>
+                        <Binary_Exp op='*s' typref='14'>
+                            <Attr>
+                                <Pos l='29' c='29' s='1' />
+                            </Attr>
+                            <Unary_Exp op='POW' typref='15'>
+                                <Attr>
+                                    <Pos l='29' c='16' s='3' />
+                                </Attr>
+                                <Id value='ABS_ENS' typref='6'>
+                                    <Attr>
+                                        <Pos l='29' c='20' s='7' />
+                                    </Attr>
+                                </Id>
+                            </Unary_Exp>
+                            <Unary_Exp op='POW' typref='16'>
+                                <Attr>
+                                    <Pos l='29' c='31' s='3' />
+                                </Attr>
+                                <Id value='REAL' typref='17'>
+                                    <Attr>
+                                        <Pos l='29' c='35' s='4' />
+                                    </Attr>
+                                </Id>
+                            </Unary_Exp>
+                        </Binary_Exp>
+                        <Unary_Exp op='POW' typref='18'>
+                            <Attr>
+                                <Pos l='29' c='43' s='3' />
+                            </Attr>
+                            <Id value='FLOAT' typref='19'>
+                                <Attr>
+                                    <Pos l='29' c='47' s='5' />
+                                </Attr>
+                            </Id>
+                        </Unary_Exp>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='30' c='10' s='1' />
+                </Attr>
+                <Id value='diff' typref='2'>
+                    <Attr>
+                        <Pos l='30' c='5' s='4' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='3'>
+                    <Attr>
+                        <Pos l='30' c='12' s='3' />
+                    </Attr>
+                    <Id value='INTEGER' typref='2'>
+                        <Attr>
+                            <Pos l='30' c='16' s='7' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='31' c='12' s='1' />
+                </Attr>
+                <Id value='union_' typref='2'>
+                    <Attr>
+                        <Pos l='31' c='5' s='6' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='3'>
+                    <Attr>
+                        <Pos l='31' c='14' s='3' />
+                    </Attr>
+                    <Id value='NAT' typref='2'>
+                        <Attr>
+                            <Pos l='31' c='18' s='3' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='32' c='12' s='1' />
+                </Attr>
+                <Id value='inter_' typref='2'>
+                    <Attr>
+                        <Pos l='32' c='5' s='6' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='3'>
+                    <Attr>
+                        <Pos l='32' c='14' s='3' />
+                    </Attr>
+                    <Id value='NAT1' typref='2'>
+                        <Attr>
+                            <Pos l='32' c='18' s='4' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='33' c='13' s='1' />
+                </Attr>
+                <Id value='union_2' typref='2'>
+                    <Attr>
+                        <Pos l='33' c='5' s='7' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='3'>
+                    <Attr>
+                        <Pos l='33' c='15' s='3' />
+                    </Attr>
+                    <Id value='NATURAL' typref='2'>
+                        <Attr>
+                            <Pos l='33' c='19' s='7' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='34' c='13' s='1' />
+                </Attr>
+                <Id value='inter_2' typref='2'>
+                    <Attr>
+                        <Pos l='34' c='5' s='7' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='3'>
+                    <Attr>
+                        <Pos l='34' c='15' s='3' />
+                    </Attr>
+                    <Id value='NATURAL1' typref='2'>
+                        <Attr>
+                            <Pos l='34' c='19' s='8' />
+                        </Attr>
+                    </Id>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='35' c='13' s='1' />
+                </Attr>
+                <Id value='union_3' typref='10'>
+                    <Attr>
+                        <Pos l='35' c='5' s='7' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='20'>
+                    <Attr>
+                        <Pos l='35' c='15' s='3' />
+                    </Attr>
+                    <Binary_Exp op='*s' typref='10'>
+                        <Attr>
+                            <Pos l='35' c='27' s='1' />
+                        </Attr>
+                        <Id value='INTEGER' typref='2'>
+                            <Attr>
+                                <Pos l='35' c='19' s='7' />
+                            </Attr>
+                        </Id>
+                        <Id value='ABS_ENS' typref='6'>
+                            <Attr>
+                                <Pos l='35' c='29' s='7' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Exp_Comparison>
+            <Exp_Comparison op=':'>
+                <Attr>
+                    <Pos l='36' c='13' s='1' />
+                </Attr>
+                <Id value='inter_3' typref='10'>
+                    <Attr>
+                        <Pos l='36' c='5' s='7' />
+                    </Attr>
+                </Id>
+                <Unary_Exp op='POW' typref='20'>
+                    <Attr>
+                        <Pos l='36' c='15' s='3' />
+                    </Attr>
+                    <Binary_Exp op='*s' typref='10'>
+                        <Attr>
+                            <Pos l='36' c='27' s='1' />
+                        </Attr>
+                        <Id value='INTEGER' typref='2'>
+                            <Attr>
+                                <Pos l='36' c='19' s='7' />
+                            </Attr>
+                        </Id>
+                        <Id value='ABS_ENS' typref='6'>
+                            <Attr>
+                                <Pos l='36' c='29' s='7' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Exp_Comparison>
+        </Nary_Pred>
+    </Invariant>
+    <Initialisation>
+        <Attr>
+            <Pos l='38' c='1' s='14' />
+        </Attr>
+        <Nary_Sub op='||'>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='39' c='10' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='ens5' typref='9'>
+                        <Attr>
+                            <Pos l='39' c='5' s='4' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Quantified_Set typref='9'>
+                        <Attr>
+                            <Pos l='39' c='13' s='1' />
+                        </Attr>
+                        <Variables>
+                            <Id value='ens' typref='6'>
+                                <Attr>
+                                    <Pos l='39' c='14' s='3' />
+                                </Attr>
+                            </Id>
+                            <Id value='ens2' typref='17'>
+                                <Attr>
+                                    <Pos l='39' c='19' s='4' />
+                                </Attr>
+                            </Id>
+                            <Id value='ens3' typref='19'>
+                                <Attr>
+                                    <Pos l='39' c='25' s='4' />
+                                </Attr>
+                            </Id>
+                        </Variables>
+                        <Body>
+                            <Nary_Pred op='&amp;'>
+                                <Exp_Comparison op='&lt;:'>
+                                    <Attr>
+                                        <Pos l='39' c='36' s='2' />
+                                    </Attr>
+                                    <Id value='ens' typref='6'>
+                                        <Attr>
+                                            <Pos l='39' c='32' s='3' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='ABS_ENS' typref='6'>
+                                        <Attr>
+                                            <Pos l='39' c='39' s='7' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                                <Exp_Comparison op='&lt;:'>
+                                    <Attr>
+                                        <Pos l='39' c='54' s='2' />
+                                    </Attr>
+                                    <Id value='ens2' typref='17'>
+                                        <Attr>
+                                            <Pos l='39' c='49' s='4' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='REAL' typref='17'>
+                                        <Attr>
+                                            <Pos l='39' c='57' s='4' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                                <Exp_Comparison op='&lt;:'>
+                                    <Attr>
+                                        <Pos l='39' c='69' s='2' />
+                                    </Attr>
+                                    <Id value='ens3' typref='19'>
+                                        <Attr>
+                                            <Pos l='39' c='64' s='4' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='FLOAT' typref='19'>
+                                        <Attr>
+                                            <Pos l='39' c='72' s='5' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Body>
+                    </Quantified_Set>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='40' c='9' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='ens' typref='8'>
+                        <Attr>
+                            <Pos l='40' c='5' s='3' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Binary_Exp op='*s' typref='8'>
+                        <Attr>
+                            <Pos l='40' c='26' s='1' />
+                        </Attr>
+                        <Nary_Exp op='{' typref='11'>
+                            <Attr>
+                                <Pos l='40' c='12' s='1' />
+                            </Attr>
+                            <Boolean_Literal value='TRUE' typref='0'>
+                                <Attr>
+                                    <Pos l='40' c='13' s='4' />
+                                </Attr>
+                            </Boolean_Literal>
+                            <Boolean_Literal value='FALSE' typref='0'>
+                                <Attr>
+                                    <Pos l='40' c='19' s='5' />
+                                </Attr>
+                            </Boolean_Literal>
+                        </Nary_Exp>
+                        <Binary_Exp op='..' typref='2'>
+                            <Attr>
+                                <Pos l='40' c='30' s='2' />
+                            </Attr>
+                            <Integer_Literal value='0' typref='1'>
+                                <Attr>
+                                    <Pos l='40' c='29' s='1' />
+                                </Attr>
+                            </Integer_Literal>
+                            <Integer_Literal value='10' typref='1'>
+                                <Attr>
+                                    <Pos l='40' c='32' s='2' />
+                                </Attr>
+                            </Integer_Literal>
+                        </Binary_Exp>
+                    </Binary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='41' c='10' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='ens2' typref='2'>
+                        <Attr>
+                            <Pos l='41' c='5' s='4' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Nary_Exp op='{' typref='2'>
+                        <Attr>
+                            <Pos l='41' c='13' s='1' />
+                        </Attr>
+                        <Integer_Literal value='1' typref='1'>
+                            <Attr>
+                                <Pos l='41' c='14' s='1' />
+                            </Attr>
+                        </Integer_Literal>
+                    </Nary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='42' c='10' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='ens3' typref='2'>
+                        <Attr>
+                            <Pos l='42' c='5' s='4' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Nary_Exp op='{' typref='2'>
+                        <Attr>
+                            <Pos l='42' c='13' s='1' />
+                        </Attr>
+                        <Integer_Literal value='0' typref='1'>
+                            <Attr>
+                                <Pos l='42' c='14' s='1' />
+                            </Attr>
+                        </Integer_Literal>
+                    </Nary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='43' c='10' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='ens4' typref='2'>
+                        <Attr>
+                            <Pos l='43' c='5' s='4' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Nary_Exp op='{' typref='2'>
+                        <Attr>
+                            <Pos l='43' c='13' s='1' />
+                        </Attr>
+                        <Integer_Literal value='4' typref='1'>
+                            <Attr>
+                                <Pos l='43' c='14' s='1' />
+                            </Attr>
+                        </Integer_Literal>
+                    </Nary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='44' c='10' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='diff' typref='2'>
+                        <Attr>
+                            <Pos l='44' c='5' s='4' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Binary_Exp op='-s' typref='2'>
+                        <Attr>
+                            <Pos l='44' c='18' s='1' />
+                        </Attr>
+                        <Id value='ens2' typref='2'>
+                            <Attr>
+                                <Pos l='44' c='13' s='4' />
+                            </Attr>
+                        </Id>
+                        <Id value='ens3' typref='2'>
+                            <Attr>
+                                <Pos l='44' c='20' s='4' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='45' c='12' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='union_' typref='2'>
+                        <Attr>
+                            <Pos l='45' c='5' s='6' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Binary_Exp op='\/' typref='2'>
+                        <Attr>
+                            <Pos l='45' c='20' s='2' />
+                        </Attr>
+                        <Id value='ens2' typref='2'>
+                            <Attr>
+                                <Pos l='45' c='15' s='4' />
+                            </Attr>
+                        </Id>
+                        <Id value='ens3' typref='2'>
+                            <Attr>
+                                <Pos l='45' c='23' s='4' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='46' c='12' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='inter_' typref='2'>
+                        <Attr>
+                            <Pos l='46' c='5' s='6' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Binary_Exp op='/\' typref='2'>
+                        <Attr>
+                            <Pos l='46' c='20' s='2' />
+                        </Attr>
+                        <Id value='ens2' typref='2'>
+                            <Attr>
+                                <Pos l='46' c='15' s='4' />
+                            </Attr>
+                        </Id>
+                        <Id value='ens3' typref='2'>
+                            <Attr>
+                                <Pos l='46' c='23' s='4' />
+                            </Attr>
+                        </Id>
+                    </Binary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='47' c='13' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='union_2' typref='2'>
+                        <Attr>
+                            <Pos l='47' c='5' s='7' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Unary_Exp op='union' typref='2'>
+                        <Attr>
+                            <Pos l='47' c='16' s='5' />
+                        </Attr>
+                        <Nary_Exp op='{' typref='3'>
+                            <Attr>
+                                <Pos l='47' c='22' s='1' />
+                            </Attr>
+                            <Id value='ens2' typref='2'>
+                                <Attr>
+                                    <Pos l='47' c='23' s='4' />
+                                </Attr>
+                            </Id>
+                            <Id value='ens3' typref='2'>
+                                <Attr>
+                                    <Pos l='47' c='29' s='4' />
+                                </Attr>
+                            </Id>
+                        </Nary_Exp>
+                    </Unary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='48' c='13' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='inter_2' typref='2'>
+                        <Attr>
+                            <Pos l='48' c='5' s='7' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Unary_Exp op='inter' typref='2'>
+                        <Attr>
+                            <Pos l='48' c='16' s='5' />
+                        </Attr>
+                        <Nary_Exp op='{' typref='3'>
+                            <Attr>
+                                <Pos l='48' c='22' s='1' />
+                            </Attr>
+                            <Id value='ens2' typref='2'>
+                                <Attr>
+                                    <Pos l='48' c='23' s='4' />
+                                </Attr>
+                            </Id>
+                            <Id value='ens3' typref='2'>
+                                <Attr>
+                                    <Pos l='48' c='29' s='4' />
+                                </Attr>
+                            </Id>
+                        </Nary_Exp>
+                    </Unary_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='49' c='13' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='union_3' typref='10'>
+                        <Attr>
+                            <Pos l='49' c='5' s='7' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Quantified_Exp type='UNION' typref='10'>
+                        <Attr>
+                            <Pos l='49' c='33' s='1' />
+                        </Attr>
+                        <Variables>
+                            <Id value='cst' typref='1'>
+                                <Attr>
+                                    <Pos l='49' c='23' s='3' />
+                                </Attr>
+                            </Id>
+                            <Id value='cst2' typref='7'>
+                                <Attr>
+                                    <Pos l='49' c='28' s='4' />
+                                </Attr>
+                            </Id>
+                        </Variables>
+                        <Pred>
+                            <Nary_Pred op='&amp;'>
+                                <Exp_Comparison op=':'>
+                                    <Attr>
+                                        <Pos l='49' c='39' s='1' />
+                                    </Attr>
+                                    <Id value='cst' typref='1'>
+                                        <Attr>
+                                            <Pos l='49' c='35' s='3' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='INT' typref='2'>
+                                        <Attr>
+                                            <Pos l='49' c='41' s='3' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                                <Exp_Comparison op=':'>
+                                    <Attr>
+                                        <Pos l='49' c='52' s='1' />
+                                    </Attr>
+                                    <Id value='cst2' typref='7'>
+                                        <Attr>
+                                            <Pos l='49' c='47' s='4' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='ABS_ENS' typref='6'>
+                                        <Attr>
+                                            <Pos l='49' c='54' s='7' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Pred>
+                        <Body>
+                            <Binary_Exp op='*s' typref='10'>
+                                <Attr>
+                                    <Pos l='49' c='70' s='1' />
+                                </Attr>
+                                <Nary_Exp op='{' typref='2'>
+                                    <Attr>
+                                        <Pos l='49' c='64' s='1' />
+                                    </Attr>
+                                    <Id value='cst' typref='1'>
+                                        <Attr>
+                                            <Pos l='49' c='65' s='3' />
+                                        </Attr>
+                                    </Id>
+                                </Nary_Exp>
+                                <Nary_Exp op='{' typref='6'>
+                                    <Attr>
+                                        <Pos l='49' c='72' s='1' />
+                                    </Attr>
+                                    <Id value='cst2' typref='7'>
+                                        <Attr>
+                                            <Pos l='49' c='73' s='4' />
+                                        </Attr>
+                                    </Id>
+                                </Nary_Exp>
+                            </Binary_Exp>
+                        </Body>
+                    </Quantified_Exp>
+                </Values>
+            </Assignement_Sub>
+            <Assignement_Sub>
+                <Attr>
+                    <Pos l='50' c='13' s='2' />
+                </Attr>
+                <Variables>
+                    <Id value='inter_3' typref='10'>
+                        <Attr>
+                            <Pos l='50' c='5' s='7' />
+                        </Attr>
+                    </Id>
+                </Variables>
+                <Values>
+                    <Quantified_Exp type='INTER' typref='10'>
+                        <Attr>
+                            <Pos l='50' c='33' s='1' />
+                        </Attr>
+                        <Variables>
+                            <Id value='cst' typref='1'>
+                                <Attr>
+                                    <Pos l='50' c='23' s='3' />
+                                </Attr>
+                            </Id>
+                            <Id value='cst2' typref='7'>
+                                <Attr>
+                                    <Pos l='50' c='28' s='4' />
+                                </Attr>
+                            </Id>
+                        </Variables>
+                        <Pred>
+                            <Nary_Pred op='&amp;'>
+                                <Exp_Comparison op=':'>
+                                    <Attr>
+                                        <Pos l='50' c='39' s='1' />
+                                    </Attr>
+                                    <Id value='cst' typref='1'>
+                                        <Attr>
+                                            <Pos l='50' c='35' s='3' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='INT' typref='2'>
+                                        <Attr>
+                                            <Pos l='50' c='41' s='3' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                                <Exp_Comparison op=':'>
+                                    <Attr>
+                                        <Pos l='50' c='52' s='1' />
+                                    </Attr>
+                                    <Id value='cst2' typref='7'>
+                                        <Attr>
+                                            <Pos l='50' c='47' s='4' />
+                                        </Attr>
+                                    </Id>
+                                    <Id value='ABS_ENS' typref='6'>
+                                        <Attr>
+                                            <Pos l='50' c='54' s='7' />
+                                        </Attr>
+                                    </Id>
+                                </Exp_Comparison>
+                            </Nary_Pred>
+                        </Pred>
+                        <Body>
+                            <Binary_Exp op='*s' typref='10'>
+                                <Attr>
+                                    <Pos l='50' c='70' s='1' />
+                                </Attr>
+                                <Nary_Exp op='{' typref='2'>
+                                    <Attr>
+                                        <Pos l='50' c='64' s='1' />
+                                    </Attr>
+                                    <Id value='cst' typref='1'>
+                                        <Attr>
+                                            <Pos l='50' c='65' s='3' />
+                                        </Attr>
+                                    </Id>
+                                </Nary_Exp>
+                                <Nary_Exp op='{' typref='6'>
+                                    <Attr>
+                                        <Pos l='50' c='72' s='1' />
+                                    </Attr>
+                                    <Id value='cst2' typref='7'>
+                                        <Attr>
+                                            <Pos l='50' c='73' s='4' />
+                                        </Attr>
+                                    </Id>
+                                </Nary_Exp>
+                            </Binary_Exp>
+                        </Body>
+                    </Quantified_Exp>
+                </Values>
+            </Assignement_Sub>
+        </Nary_Sub>
+    </Initialisation>
+    <TypeInfos>
+        <Type id='0'>
+            <Id value='BOOL' />
+        </Type>
+        <Type id='1'>
+            <Id value='INTEGER' />
+        </Type>
+        <Type id='2'>
+            <Unary_Exp op='POW'>
+                <Id value='INTEGER' />
+            </Unary_Exp>
+        </Type>
+        <Type id='3'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Id value='INTEGER' />
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='4'>
+            <Unary_Exp op='POW'>
+                <Id value='ENS' />
+            </Unary_Exp>
+        </Type>
+        <Type id='5'>
+            <Id value='ENS' />
+        </Type>
+        <Type id='6'>
+            <Unary_Exp op='POW'>
+                <Id value='ABS_ENS' />
+            </Unary_Exp>
+        </Type>
+        <Type id='7'>
+            <Id value='ABS_ENS' />
+        </Type>
+        <Type id='8'>
+            <Unary_Exp op='POW'>
+                <Binary_Exp op='*'>
+                    <Id value='BOOL' />
+                    <Id value='INTEGER' />
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='9'>
+            <Unary_Exp op='POW'>
+                <Binary_Exp op='*'>
+                    <Binary_Exp op='*'>
+                        <Unary_Exp op='POW'>
+                            <Id value='ABS_ENS' />
+                        </Unary_Exp>
+                        <Unary_Exp op='POW'>
+                            <Id value='REAL' />
+                        </Unary_Exp>
+                    </Binary_Exp>
+                    <Unary_Exp op='POW'>
+                        <Id value='FLOAT' />
+                    </Unary_Exp>
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='10'>
+            <Unary_Exp op='POW'>
+                <Binary_Exp op='*'>
+                    <Id value='INTEGER' />
+                    <Id value='ABS_ENS' />
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='11'>
+            <Unary_Exp op='POW'>
+                <Id value='BOOL' />
+            </Unary_Exp>
+        </Type>
+        <Type id='12'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Binary_Exp op='*'>
+                        <Id value='BOOL' />
+                        <Id value='INTEGER' />
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='13'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Binary_Exp op='*'>
+                        <Binary_Exp op='*'>
+                            <Unary_Exp op='POW'>
+                                <Id value='ABS_ENS' />
+                            </Unary_Exp>
+                            <Unary_Exp op='POW'>
+                                <Id value='REAL' />
+                            </Unary_Exp>
+                        </Binary_Exp>
+                        <Unary_Exp op='POW'>
+                            <Id value='FLOAT' />
+                        </Unary_Exp>
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='14'>
+            <Unary_Exp op='POW'>
+                <Binary_Exp op='*'>
+                    <Unary_Exp op='POW'>
+                        <Id value='ABS_ENS' />
+                    </Unary_Exp>
+                    <Unary_Exp op='POW'>
+                        <Id value='REAL' />
+                    </Unary_Exp>
+                </Binary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='15'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Id value='ABS_ENS' />
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='16'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Id value='REAL' />
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='17'>
+            <Unary_Exp op='POW'>
+                <Id value='REAL' />
+            </Unary_Exp>
+        </Type>
+        <Type id='18'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Id value='FLOAT' />
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+        <Type id='19'>
+            <Unary_Exp op='POW'>
+                <Id value='FLOAT' />
+            </Unary_Exp>
+        </Type>
+        <Type id='20'>
+            <Unary_Exp op='POW'>
+                <Unary_Exp op='POW'>
+                    <Binary_Exp op='*'>
+                        <Id value='INTEGER' />
+                        <Id value='ABS_ENS' />
+                    </Binary_Exp>
+                </Unary_Exp>
+            </Unary_Exp>
+        </Type>
+    </TypeInfos>
+
+</Machine>
