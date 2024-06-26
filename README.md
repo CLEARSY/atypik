@@ -2,7 +2,15 @@
 
 A TYPe Inference Kit for B.
 
-This project aims to infered a type for each expression in a bxml or pog file. It will generate a new file adding a RichTypesInfo tag.
+This project aims to infered a type for each expression in a bxml or pog file. 
+It will generate a new file adding a RichTypesInfo tag.
+
+Formats bxml and pog are used by Atelier B to represent B components
+and their proof obligations.
+
+The development of atypik has been partially funded by
+[ANR](<https://anr.fr>) through project
+[BLaSST](<https://anr.fr/Project-ANR-21-CE25-0010>) "Enhancing B Language Reasoners with SAT and SMT Techniques".
 
 ## Installation
 
